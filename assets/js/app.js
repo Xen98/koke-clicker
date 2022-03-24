@@ -5,6 +5,7 @@ const listaSkins = document.getElementById('listaSkins');
 const skins = document.getElementById('skins');
 
 let valorContador = 0;
+const audS4C = new Audio('assets/sounds/suaj4clicker.wav');
 
 const refSkins = {
   skinKoke: 'assets/img/koke.png',
@@ -48,3 +49,5 @@ btnSkin.addEventListener('click', mostrarSkins);
 skins.addEventListener('click', seleccionarSkin);
 
 initContador();
+
+audS4C.play();
