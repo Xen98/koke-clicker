@@ -3,6 +3,7 @@ const contador = document.getElementById('contador');
 const btnSkin = document.getElementById('cambiarSkin');
 const listaSkins = document.getElementById('listaSkins');
 const skins = document.getElementById('skins');
+const titulo = document.getElementById('titulo');
 
 let valorContador = 0;
 const audS4C = new Audio('assets/sounds/suaj4clicker.wav');
@@ -47,6 +48,8 @@ koke.addEventListener('click', contadorKoke);
 btnSkin.addEventListener('click', mostrarSkins);
 
 skins.addEventListener('click', seleccionarSkin);
+
+titulo.addEventListener('click', () => audS4C.play())
 
 initContador();
 

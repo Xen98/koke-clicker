@@ -9,6 +9,9 @@ body {
 .titulo {
   text-align: center;
   font-size: 1.5rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+
 }
 
 .contador {
