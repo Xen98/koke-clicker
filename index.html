@@ -8,22 +8,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
 
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/dbec4d7656.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css" media="all">
     
     <link rel="shortcut icon" href="assets/img/koke.png" type="image/x-icon">
-    <title>Koke Clicker</title>
+    <title>Suaj4Clicker</title>
   </head>
   <body oncontextmenu="return false" onkeydown="return false">
     <div class="app">
       <div class="titulo">
-       <h1 class="titulo__texto">Koke Clicker</h1> 
+       <h1 class="titulo__texto">Suaj4Clicker</h1> 
       </div>
      <div class="contador">
        <span id="contador" class="contador__cuenta">0</span>
      </div> 
      <div class="koke">
-        <img id="koke" class="koke__imagen" src="assets/img/koke.png" alt="Koke" draggable="false">  
+        <img id="koke" class="koke__imagen" src="assets/img/gomers.png" alt="Koke" draggable="false">  
      </div>
+    </div>
+
+    <div class="cambiar-skin">
+      <i id="cambiarSkin" class="cambiar-skin__icon fa-solid fa-arrows-rotate"></i>
+    </div>
+
+    <div id="listaSkins" class="skin-modal oculto">
+      <ul id="skins" class="skin-modal__lista ">
+        <li class="skin-modal__item"><img id="skinKoke" class="skin-modal__img" src="assets/img/koke.png"></li>
+        <li class="skin-modal__item"><img id="skinJargua" class="skin-modal__img" src="assets/img/jargua.png"></li>
+        <li class="skin-modal__item"><img id="skinGomers" class="skin-modal__img" src="assets/img/gomers.png"></li>
+        <li class="skin-modal__item"><img id="skinChen" class="skin-modal__img" src="assets/img/chen.png"></li>
+      </ul> 
     </div>
 
     <script src="assets/js/app.js"></script>
