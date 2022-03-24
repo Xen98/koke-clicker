@@ -49,6 +49,8 @@ body {
 
 .cambiar-skin__icon {
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+
 }
 
 .skin-modal {
