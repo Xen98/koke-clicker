@@ -56,14 +56,10 @@ body {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  max-height: 0;
-  transition: max-height 1s ease-out;
-  overflow: hidden;
   }
 
 .oculto {
-  max-height: 500px;
-  transition: max-height 1s ease-in;
+  display: none;
 }
 
 .skin-modal__lista {

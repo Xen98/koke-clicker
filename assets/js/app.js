@@ -35,8 +35,11 @@ const mostrarSkins = () => {
 }
 
 const seleccionarSkin = (e) => {
-  skinId= e.originalTarget.id;
-  koke.setAttribute('src', refSkins[skinId]);
+  skinId = e.originalTarget.id;
+  console.log(e);
+  if (skinId != 'skins') {
+    koke.setAttribute('src', refSkins[skinId]);
+  }
 }
 
 koke.addEventListener('click', contadorKoke);
