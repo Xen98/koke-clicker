@@ -16,21 +16,30 @@
     <link rel="shortcut icon" href="assets/img/koke.png" type="image/x-icon">
     <title>Suaj4Clicker</title>
   </head>
-  <body oncontextmenu="return false" onkeydown="return false">
+  <body oncontextmenu="return false" onkeydown="return false" class="light">
     <div class="app">
+
+      <div class="color-mode">
+        <div class="color-mode__button" id="color-button">
+          <i id="icon-color" class="fa-solid fa-moon"></i>
+        </div>
+      </div>
+
       <div class="titulo">
        <h1 id="titulo" class="titulo__texto">Suaj4Clicker</h1> 
       </div>
+
      <div class="contador">
        <span id="contador" class="contador__cuenta">0</span>
      </div> 
+
      <div class="koke">
         <img id="koke" class="koke__imagen" src="assets/img/gomers.png" alt="Koke" draggable="false">  
      </div>
     </div>
 
     <div class="cambiar-skin">
-      <i id="cambiarSkin" class="cambiar-skin__icon fa-solid fa-arrows-rotate"></i>
+      <i id="cambiarSkin" class="cambiar-skin__icon fa-solid fa-circle-dot"></i>
     </div>
 
     <div id="listaSkins" class="skin-modal oculto">
