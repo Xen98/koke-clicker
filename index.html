@@ -6,7 +6,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Press+Start+2P&display=swap" rel="stylesheet"> 
 
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/dbec4d7656.js" crossorigin="anonymous"></script>
@@ -17,25 +20,27 @@
     <title>Suaj4Clicker</title>
   </head>
   <body oncontextmenu="return false" onkeydown="return false" class="light">
-    <div class="app">
 
-      <div class="color-mode">
-        <div class="color-mode__button" id="color-button">
-          <i id="icon-color" class="fa-solid fa-moon"></i>
-        </div>
-      </div>
-
+    <header class="header">
+      
       <div class="titulo">
-       <h1 id="titulo" class="titulo__texto">Suaj4Clicker</h1> 
+        <h1 id="titulo" class="titulo__texto">Suaj4Clicker</h1> 
       </div>
 
-     <div class="contador">
-       <span id="contador" class="contador__cuenta">0</span>
-     </div> 
+      <div class="color-mode" id="color-button">
+        <i id="icon-color" class="fa-solid fa-moon"></i>
+      </div>
 
-     <div class="koke">
+    </header>
+
+    <div class="app">
+      <div class="contador">
+        <span id="contador" class="contador__cuenta">0</span>
+      </div> 
+
+      <div class="koke">
         <img id="koke" class="koke__imagen" src="assets/img/gomers.png" alt="Koke" draggable="false">  
-     </div>
+      </div>
     </div>
 
     <div class="cambiar-skin">
@@ -50,6 +55,9 @@
         <li class="skin-modal__item"><img id="skinChen" class="skin-modal__img" src="assets/img/chen.png"></li>
       </ul> 
     </div>
+
+    <div class="aside-i"></div>
+    <div class="aside-d"></div>
 
     <script src="assets/js/app.js"></script>
   </body>

@@ -13,15 +13,19 @@ const dark = true;
 let valorContador = 0;
 const audS4C = new Audio('assets/sounds/suaj4clicker.wav');
 const audPop = new Audio('assets/sounds/pop.mp3');
+const audKoke = new Audio('assets/sounds/koke.wav');
+const audJargua = new Audio('assets/sounds/jargua.wav');
+const audGomers = new Audio('assets/sounds/gomers.wav');
+const audChen = new Audio('assets/sounds/chen.wav');
 
 audPop.volume = 0.3;
 audS4C.volume = 0.6;
 
 const refSkins = {
-  skinKoke: 'assets/img/koke.png',
-  skinJargua: 'assets/img/jargua.png',
-  skinGomers: 'assets/img/gomers.png',
-  skinChen: 'assets/img/chen.png'
+  skinKoke: {img: 'assets/img/koke.png', aud: audKoke},
+  skinJargua: {img: 'assets/img/jargua.png', aud: audJargua},
+  skinGomers: {img: 'assets/img/gomers.png', aud: audGomers},
+  skinChen: {img: 'assets/img/chen.png', aud: audChen}
 }
 
 const cambiarTema = () => {
@@ -59,7 +63,8 @@ const mostrarSkins = () => {
 const seleccionarSkin = (e) => {
   skinId = e.target.id;
   if (skinId != 'skins' && skinId) {
-    koke.setAttribute('src', refSkins[skinId]);
+    koke.setAttribute('src', refSkins[skinId].img);
+    refSkins[skinId].aud.play();
   }
 }
 
